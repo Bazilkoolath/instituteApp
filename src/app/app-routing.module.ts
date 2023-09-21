@@ -1,18 +1,25 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { LoginComponent } from './login/login.component';
-import { StudentRegistrationComponent } from './student-registration/student-registration.component';
 
 const routes: Routes = [
   {
-    path:"",component:LoginComponent
+    path:"",
+    redirectTo:"",
+    pathMatch:"full"
+  },
+{
+    path:"student", 
+    loadChildren: () => import('./student/student.module').then(module => module.StudentModule)
   },{
-    path:"dashboard",component:DashboardComponent
+    path:"teacher",
+    loadChildren: () => import('./teacher/teacher.module').then(module => module.TeacherModule)
   },{
-
-    path:"student-registration",component:StudentRegistrationComponent
-
+    path:"admin",
+    loadChildren: () => import('./admin/admin.module').then(module => module.AdminModule)
+  },
+  {
+    path:"",
+    loadChildren: () => import('./auth/auth.module').then(module => module.AuthModule)
   }
 ];
 
