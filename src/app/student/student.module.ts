@@ -6,10 +6,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ExamResultComponent } from './exam-result/exam-result.component';
 import { StudentsAttendanceComponent } from './students-attendance/students-attendance.component';
 import { TimeTableComponent } from './time-table/time-table.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     StudentComponent,
+    NavbarComponent,
+    SidebarComponent,
     DashboardComponent,
     ExamResultComponent,
     StudentsAttendanceComponent,

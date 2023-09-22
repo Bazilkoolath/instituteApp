@@ -22,7 +22,7 @@ const routes: Routes = [
     path:"dashboard",
     component:DashboardComponent
   },{
-    path:'student-attendens',
+    path:'student-attendance',
     component:StudentsAttendanceComponent
   },{
     path:'student-fee',
