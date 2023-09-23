@@ -5,10 +5,19 @@ import { StudentsAttendanceComponent } from './students-attendance/students-atte
 import { StudentsFeeComponent } from './students-fee/students-fee.component';
 import { StudentsListViewComponent } from './students-list-view/students-list-view.component';
 import { TimeTableComponent } from './time-table/time-table.component';
+import { TeacherComponent } from './teacher.component';
 
 const routes: Routes = [
   {
-    path:'deshboard',
+    path:"",
+    component:TeacherComponent,
+    children:[  {
+      path:"",
+      redirectTo:"dashboard",
+      pathMatch:"full"
+    },
+  {
+    path:'dashboard',
     component:DashboardComponent
   },{
     path:'students-attendance',
@@ -17,12 +26,12 @@ const routes: Routes = [
     path:'students-fee',
     component:StudentsFeeComponent
   },{
-    path:'sudents-list-view',
+    path:'students-list-view',
     component:StudentsListViewComponent
   },{
     path:'time-table',
     component:TimeTableComponent
-  }
+  }]}
 ];
 
 @NgModule({

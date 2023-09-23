@@ -11,14 +11,14 @@
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #000;
+    background: rgb(58, 56, 56);
     color: #fff;
     transition: all 0.3s;
 }
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #292828;
+    background: rgb(58, 56, 56);
 }
 .sidebar-btn{
     color: #fff;

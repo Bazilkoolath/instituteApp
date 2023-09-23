@@ -7,11 +7,15 @@ import { StudentsAttendanceComponent } from './students-attendance/students-atte
 import { StudentsFeeComponent } from './students-fee/students-fee.component';
 import { StudentsListViewComponent } from './students-list-view/students-list-view.component';
 import { TimeTableComponent } from './time-table/time-table.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
   declarations: [
     TeacherComponent,
+    NavbarComponent,
+    SidebarComponent,
     DashboardComponent,
     StudentsAttendanceComponent,
     StudentsFeeComponent,

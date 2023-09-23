@@ -1,46 +1,13 @@
-<nav id="sidebar">
+<nav class="h-100" id="sidebar">
     <div class="sidebar-header">
         <h3>Institution</h3>
     </div>
 
-    <ul class="list-unstyled components">
-        <p>DashBoard</p>
-        <li class="active">
-            <a data-toggle="collapse" aria-expanded="false">Home</a>
-
-        </li>
-        <li>
-            <a href="#">About</a>
-        </li>
-        <li>
-            <!-- href="#pageSubmenu" -->
-            <a href="#" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-            <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                    <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <a href="#">Portfolio</a>
-        </li>
-        <li>
-            <a href="#">Contact</a>
-        </li>
-    </ul>
-
-    <ul class="list-unstyled CTAs">
-        <li>
-            <a href="" class="download">Download Appilication</a>
-        </li>
-        <li>
-            <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-        </li>
-    </ul>
+    <div class="list-unstyled sidebar-btn-div d-flex flex-column gap-3">
+        <button class="sidebar-btn " [routerLink]="['dashboard']" routerLinkActive="router-link-active">DashBoard</button>
+        <button class="sidebar-btn" [routerLink]="['student-attendance']" routerLinkActive="router-link-active">Student Attendance</button>
+        <button class="sidebar-btn" [routerLink]="['account-managment']" routerLinkActive="router-link-active">Account Managment</button>
+        <button class="sidebar-btn" [routerLink]="['payment-managment']" routerLinkActive="router-link-active">Payment Managment</button>
+        <button class="sidebar-btn" [routerLink]="['time-table']" routerLinkActive="router-link-active">Time Table</button>  
+    </div>
 </nav>
